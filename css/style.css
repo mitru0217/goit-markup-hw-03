@@ -4,6 +4,7 @@
     --activ-color: #2196F3;
 }
 body {
+    width: 1600px;
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -14,8 +15,12 @@ h1, h2, h3, h4, h5,h6, p, ul {
     padding: 0;
 }
 .container {
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     outline: 1px solid orangered;
 }
 .section {
@@ -31,6 +36,29 @@ a {
 button {
     cursor: pointer;
 }
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+.site-nav .link, .auth-nav .link-contakt {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+.auth-nav .item + .item {
+    margin-left: 50px;
+} 
 .link-contakt {
     color: var(--text-color);
 }
@@ -44,19 +72,22 @@ button {
     color: var(--activ-color);
 }
 .logo-text {
+display: inline-block;
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
 }
+.header-border {
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
 .logo-margin-h {
-    display: inline-block;
-    margin-bottom: 25px;
-    margin-top: 24px;
+    display: block;
+    padding-bottom: 25px;
+    padding-top: 24px;
 }
 .text-header {
-    display: inline-block;
-    margin-bottom: 32px;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -73,9 +104,12 @@ font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 text-transform: uppercase;
+text-align: center;
 }
 .btn {
+  display: inline-block;  
 background-color: #2196F3;
+margin: 0 auto;
 }
 .btn:hover {
     background-color: rgba(24, 140, 232, 1);
@@ -86,6 +120,8 @@ background-color: #2196F3;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
+    text-align: center;
+    }
 }
 .title-text {
     margin-bottom: 10px;
@@ -109,6 +145,21 @@ background-color: #2196F3;
 .link-contakt, .features-text, .team-text, .portfolio-text {
     color: var(--text-color);
 }
+.description-site .item {
+    display: flex;
+}
+.features-list .item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-list {
+    width: 270px;
+    margin-right: 30px;
+}
+.features-list .item:not(:last-child) {
+    margin-right: 30px;
+}
 .features-text, .footer-text {
     font-size: 14px;
     line-height: 1.7;
@@ -127,9 +178,6 @@ background-color: #FFFFFF;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-}
-.img-margin {
-    margin-bottom: 30px;
 }
 .portfolio-title {
     font-style: normal;
@@ -173,11 +221,34 @@ background-color: #FFFFFF;
     line-height: 1.6;
     letter-spacing: 0.03em;
 }
+.portfolio-site {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+.portfolio-site .item + .item {
+    margin-left: 8px;
+} 
+.portfolio-hidden {
+    vis
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .portfolio-card {
     width: 370px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    margin-bottom: 110px;
+}
+.portfolio-card + .portfolio-card {
+margin-left: 30px;
 }
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+.portfolio-card img {
+    display: block;
 }
