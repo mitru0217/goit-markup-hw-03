@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .hero-section {
     padding-top: 200px;
@@ -150,6 +151,9 @@ text-align: center;
 .description-site .item {
     display: flex;
 }
+.f-section {
+    padding-top: 94px;
+}
 .features-list {
     display: flex;
 }
@@ -170,11 +174,6 @@ text-align: center;
 }
 .team {
     background-color:#F5F4FA;
-}
-.team-section {
-    margin-top: 94px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .team-site {
     display: flex;
