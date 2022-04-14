@@ -74,6 +74,21 @@ button {
 .link-contakt:hover, .link-contakt:focus {
     color: var(--activ-color);
 }
+.link,
+.features-title,
+.descripton-title,
+.team-title,
+.h2-text,
+.filter-text,
+.portfolio-title {
+    color: var(--title-text-color);
+}
+.link-contakt,
+.features-text,
+.team-text,
+.portfolio-text {
+    color: var(--text-color);
+}
 .logo-text {
 display: inline-block;
 font-family: 'Raleway', sans-serif;
@@ -133,9 +148,6 @@ text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.link,.features-title,.descripton-title, .team-title, .h2-text, .filter-text, .portfolio-title  {
- color: var(--title-text-color);
-}
 .h2-text {
     margin-bottom: 50px;
     font-weight: 700;
@@ -143,9 +155,6 @@ text-align: center;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-}
-.link-contakt, .features-text, .team-text, .portfolio-text {
-    color: var(--text-color);
 }
 .description-site .item {
     display: flex;
