@@ -141,6 +141,8 @@ text-align: center;
     background-color: rgba(24, 140, 232, 1);
 }
 .btn-text {
+    padding: 0;
+
     align-items: center;
     text-align: center;
     font-family: inherit;
